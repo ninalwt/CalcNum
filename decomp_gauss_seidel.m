@@ -1,4 +1,4 @@
-function i = decomp_gauss_seidel(M,Pb,x0)
+function i = decomp_gauss_seidel(M,Pb,x0) %decomposicao de gauss-seidel
     INF = tril(M);
     SUP = triu(M,1);
     C = -INF \ SUP; % Calculando a matriz de iteração
