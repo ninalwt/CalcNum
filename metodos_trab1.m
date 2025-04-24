@@ -78,7 +78,7 @@ y = coords_sub(:,2);
 scatter3(x, y, x_ja, 2, x_ja)
 colorbar
 colormap jet
-title('Gauss-Jacobi')
+title('Jacobi')
 
 figure(5)
 x = coords_sub(:,1);
@@ -102,7 +102,7 @@ title('Gradientes Conjugados')
 fprintf('\nTempos de Execução:\n');
 fprintf('LU: %.4f s\n', tempo_lu);
 fprintf('Cholesky: %.4f s\n', tempo_ch);
-fprintf('Gauss-Jacobi: %.4f s (%d iterações)\n', tempo_ja, i_ja);
+fprintf('Jacobi: %.4f s (%d iterações)\n', tempo_ja, i_ja);
 fprintf('Gauss-Seidel: %.4f s (%d iterações)\n', tempo_gs, i_gs);
 fprintf('Gradientes Conjugados: %.4f s (%d iterações)\n', tempo_gr, i_gr);
 
